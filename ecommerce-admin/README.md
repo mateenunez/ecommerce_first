@@ -1,41 +1,32 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### PÁGINA PRINCIPAL
 
-## Getting Started
+Para obtener acceso a la página del administrador se debe iniciar session con _Google_ y que el email sea el _email habilitado_ para ingresar, (es decir el mio).
 
-First, run the development server:
+**(INICIO DE SESION)**
+![Screenshot_4](https://github.com/mateenunez/ecommerce_first/assets/62401255/8e6ef8ff-5d2f-4371-818f-f86598b70e40)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Una vez que entramos a la página nos muestra el nombre del usuario que inicio sesión, y a través de la navegación podemos acceder a las funciones que tiene el administrador.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**(PÁGINA PRINCIPAL)**
+![Screenshot_5](https://github.com/mateenunez/ecommerce_first/assets/62401255/d321a302-0de4-4f49-ad34-eb539ef4da9c)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+La página principal carece de contenido ya que las funciones estan en otros apartados **"/products"** y **"/consults"**.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+La página de productos permite al administrador leer, crear, modificar y eliminar productos.
 
-## Learn More
+**(PÁGINA DE PRODUCTOS)**
+![Screenshot_6](https://github.com/mateenunez/ecommerce_first/assets/62401255/fd068b95-4b94-4181-97d4-45e48ff23661)
 
-To learn more about Next.js, take a look at the following resources:
+La página que lista los productos hace girar un spinner hasta que termina de cargar los datos, es decir los productos, mostrando nombre, descripción, stock, precio por unidad e id del producto.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**(LISTADO DE PRODUCTOS)**
+![Screenshot_7](https://github.com/mateenunez/ecommerce_first/assets/62401255/949d08e0-7e62-4725-8fe4-4209c47ffd6d)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Por otra parte, la página de ordenes muestra todas las ordenes existentes en una tabla. La cabecera de la tabla contiene los datos del ciente, los productos que solicitó el cliente, el monto total de los productos y el id de la orden.
 
-## Deploy on Vercel
+La página de ordenes tiene solo la funcion de marcar una orden como completa (es decir eliminar la orden de la base de datos).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**(PÁGINA DE ORDENES)**
+![Screenshot_8](https://github.com/mateenunez/ecommerce_first/assets/62401255/cb0e9fae-2eab-44a0-8227-e48f5dc66290)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-=======
-# ecommerce_first
-Este proyecto cuenta con dos paginas, una de usuario y otra de administrador. Leer README para más información.
->>>>>>> 11f05638268289ae8cf6f1a0b05245f0ddb65ac8
+> Otras aclaraciones: la página es responsive, se utilizó Tailwind CSS para darle estilo.
